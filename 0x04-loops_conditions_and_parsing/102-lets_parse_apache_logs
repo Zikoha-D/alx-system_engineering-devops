@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-#This script parse through the log file and print the ip and http status
+# Parses apache log files
 
-awk -F' ' '{ print $1, $9 }' apache-access.log
+awk '{ print $1, $9 }' apache-access.log
